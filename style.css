@@ -93,6 +93,9 @@ input {
   font-weight: 600;
 }
 
+input::placeholder{
+  color: rgb(255, 255, 255);
+}
 
 
 /* MEDIA QUERIES */
@@ -136,97 +139,25 @@ main {
   scale: 0.97;
 }
 
+/* GASTOS */
 
-#password-range {
-  appearance: none;
-  border-radius: 12px;
-  background: linear-gradient(
-    to right,
-    var(--clr--accent) 50%,
-    var(--clr--text--400) 50%
-  );
-  transition: background 0.15s ease-in-out;
-  height: 4px;
-  outline: none;
-  width: 87%;
-}
-
-#password-range::-webkit-slider-thumb {
-  appearance: none;
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  background-color: var(--clr--text--700);
-  cursor: pointer;
-  border: none;
-}
-
-#password-range::-moz-range-thumb {
-  appearance: none;
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  background-color: var(--clr--text--700);
-  cursor: pointer;
-  border: none;
-}
-
-.container__longitud__range {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.container__longitud__range__value {
-  font-size: 28px;
-  font-weight: 600;
-  color: var(--clr--text--700);
-}
-
-/* CONFIGURACIÓN */
-.container__configuraciones {
+/* GASTOS TOTALES */
+.gasto-total__container {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-}
-
-.container__configuraciones__inputs {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.container__configuraciones__inputs .input {
-  display: flex;
-  justify-content: space-between;
+  gap: 10px;
   align-items: center;
+  margin-top: 24px;
 }
-
-.container__configuraciones__inputs .input label {
+.gasto-total__container .nombre {
   font-size: 18px;
   font-weight: 600;
 }
 
-.container__configuraciones__inputs .input input {
-  width: 24px;
-  height: 24px;
+.gasto-total__container .precio {
+  font-size: 24px;
+  font-weight: 800;
   background-color: white;
-  border: 2px solid var(--clr--accent);
-}
-
-.input__check {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.input__check i {
-  position: absolute;
-  display: none;
-  pointer-events: none;
-}
-
-#copy-icon {
-  transition: 0.2s;
+  color: #82ef23;
+  padding: 6px 26px;
 }
