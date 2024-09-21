@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <title>💰 Controlador de Gastos</title>
-</head>
-<body>
-  <main></main>
-  <script src="./main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>💰 Controlador de Gastos</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="header">
+          <h1>CONTROLADOR DE GASTOS <span class="title">MENSUAL</span></h1>
+        </div>
+        <div class="inputs__container">
+          <input type="text" placeholder="Nombre del Gasto" />
+          <input type="text" placeholder="Valor del Gasto" />
+          <button>AGREGAR GASTO</button>
+        </div>
+        <div class="gastos__container"></div>
+        <div class="gasto-total__container">
+          <p>Gasto Total</p>
+          <p>45$</p>
+        </div>
+      </div>
+    </main>
+    <script src="./main.js"></script>
+  </body>
 </html>
