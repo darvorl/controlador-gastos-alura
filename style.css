@@ -173,13 +173,14 @@ main {
   font-size: 18px;
   font-weight: 600;
   color: var(--clr--text--700);
+  min-width: 200px;
+  text-align: start;
 }
 
 .gastos__fila .precio {
   font-size: 18px;
   font-weight: 600;
   color: #58c300;
-  margin-left: 30px;
 }
 
 /* GASTOS TOTALES */
