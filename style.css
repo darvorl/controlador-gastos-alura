@@ -93,10 +93,9 @@ input {
   font-weight: 600;
 }
 
-input::placeholder{
+input::placeholder {
   color: rgb(255, 255, 255);
 }
-
 
 /* MEDIA QUERIES */
 
@@ -111,7 +110,7 @@ main {
 .container {
   max-width: 800px;
   background-color: var(--clr--text--100);
-  padding: 45px 70px;
+  padding: 24px 70px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -140,6 +139,48 @@ main {
 }
 
 /* GASTOS */
+.gastos__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  height: 235px;
+}
+
+.gastos__fila {
+  display: flex;
+  background-color: white;
+  padding: 14px 20px;
+  border-radius: 4px;
+  align-items: center;
+}
+
+.gastos__fila .btn {
+  margin-left: auto;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 24px;
+  min-width: auto;
+  background-color: hsl(353, 86%, 54%);
+}
+
+.gastos__fila .btn:hover {
+  background-color: hsl(353, 86%, 39%);
+}
+
+.gastos__fila .nombre {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--clr--text--700);
+}
+
+.gastos__fila .precio {
+  font-size: 18px;
+  font-weight: 600;
+  color: #58c300;
+  margin-left: 30px;
+}
 
 /* GASTOS TOTALES */
 .gasto-total__container {
@@ -158,6 +199,6 @@ main {
   font-size: 24px;
   font-weight: 800;
   background-color: white;
-  color: #82ef23;
+  color: #58c300;
   padding: 6px 26px;
 }
