@@ -1,0 +1,248 @@
+/* ROOT */
+:root {
+  --clr--accent: hsl(214, 100%, 44%);
+  --clr--text--700: hsl(235, 21%, 21%);
+  --clr--text--400: hsl(218, 17%, 62%);
+  --clr--text--200: hsl(197, 24%, 84%);
+  --clr--text--100: hsl(197, 24%, 94%);
+  font-family: "Montserrat", sans-serif;
+}
+
+/* CSS RESETS */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* BASE STYLES */
+h1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--clr--text--700);
+}
+
+/* UTILITY CLASSES */
+.btn {
+  background-color: var(--clr--accent);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--clr--text--100);
+  padding: 20px 0;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+input {
+  cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+
+/* --- STYLES --- */
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  flex: 1;
+  max-width: 450px;
+  background-color: var(--clr--text--100);
+  padding: 32px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  border-radius: 4px;
+}
+
+.container > .btn:hover {
+  box-shadow: 0px 0px 24px 8px rgba(0, 97, 223, 0.3);
+  scale: 0.97;
+}
+
+.container label {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* HEADER */
+
+.container__header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.container__header__password {
+  box-shadow: none;
+  padding-inline: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5.4px);
+  -webkit-backdrop-filter: blur(5.4px);
+  border: 2px solid var(--clr--text--100);
+}
+
+.container__header__password i {
+  font-size: 28px;
+}
+
+/* PASSWORD SETTINGS */
+.container__password__settings {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* LONGITUD */
+.container__longitud {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#password-range {
+  appearance: none;
+  border-radius: 12px;
+  background: linear-gradient(to right, var(--clr--accent) 50%, var(--clr--text--400) 50%);
+  transition: background 0.15s ease-in-out;
+  height: 4px;
+  outline: none;
+  width: 87%;
+}
+
+#password-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: var(--clr--text--700);
+  cursor: pointer;
+  border: none;
+}
+
+#password-range::-moz-range-thumb {
+  appearance: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: var(--clr--text--700);
+  cursor: pointer;
+  border: none;
+}
+
+.container__longitud__range {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container__longitud__range__value {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--clr--text--700);
+}
+
+/* CONFIGURACIÓN */
+.container__configuraciones {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.container__configuraciones__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.container__configuraciones__inputs .input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container__configuraciones__inputs .input label {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.container__configuraciones__inputs .input input {
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border: 2px solid var(--clr--accent);
+}
+
+.input__check {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input__check i {
+  position: absolute;
+  display: none;
+  pointer-events: none;
+}
+
+#copy-icon {
+  transition: 0.2s;
+}
