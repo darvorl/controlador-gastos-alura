@@ -19,7 +19,7 @@ btnAgregar.addEventListener("click", () => {
 
     let precioGasto = document.createElement("div");
     precioGasto.classList.add("precio");
-    precioGasto.textContent = `${valorGasto.value} $`;
+    precioGasto.textContent = `$ ${valorGasto.value}`;
 
     let btnEliminar = document.createElement("button");
     btnEliminar.textContent = "ELIMINAR";
@@ -28,7 +28,7 @@ btnAgregar.addEventListener("click", () => {
     btnEliminar.addEventListener("click", () => {
       gastos.removeChild(gasto);
       total -= precio;
-      gastoTotal.textContent = `${total} $`;
+      gastoTotal.textContent = `$ ${total}`;
     });
 
     gasto.appendChild(nombreGasto);
@@ -40,7 +40,7 @@ btnAgregar.addEventListener("click", () => {
     let precio = parseFloat(valorGasto.value);
 
     total += precio;
-    gastoTotal.textContent = `${total} $`;
+    gastoTotal.textContent = `$ ${total}`;
 
     nombreDelGasto.value = "";
     valorGasto.value = "";
